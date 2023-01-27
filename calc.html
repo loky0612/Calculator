@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="main">
+    <div id="calci">
+        <form name="f">
+            <input type="text" name="box" placeholder="0" id="bx"><br>
+            <input type="button" value="1" onclick="f.box.value+=1">
+            <input type="button" value="2" onclick="f.box.value+=2">
+            <input type="button" value="3" onclick="f.box.value+=3">
+            <input type="button" value="+" onclick="add()"> <br>
+    
+            <input type="button" value="4" onclick="f.box.value+=4">
+            <input type="button" value="5" onclick="f.box.value+=5">
+            <input type="button" value="6" onclick="f.box.value+=6">
+            <input type="button" value="-" onclick="sub()"> <br>
+    
+            <input type="button" value="7" onclick="f.box.value+=7">
+            <input type="button" value="8" onclick="f.box.value+=8">
+            <input type="button" value="9" onclick="f.box.value+=9">
+            <input type="button" value="x" onclick="mul()"><br>
+    
+            <input type="button" value="C" onclick="f.box.value=''">
+            <input type="button" value="0" onclick="f.box.value+=0">
+            <input type="button" value="=" onclick="f.box.value=eval(f.box.value)">
+            <input type="button" value="/" onclick="divi()">
+        </form>
+    </div>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
