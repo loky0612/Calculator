@@ -5,7 +5,7 @@
 .main{
     min-height: 100vh;
     width: 100%;
-    background-image: url('main2.jpg');
+    background-image: url('Images/main2.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -35,4 +35,21 @@ input{
     margin: 10px;
     margin-top: 25px;
     border-radius: 10px;
+}
+@media(max-width:700px){
+    #calci{
+        width: 360px;
+        height: 470px;
+        margin-left: auto;
+        margin-bottom: 100px;
+    }
+    input{
+        width: 65px;
+        height: 60px;
+        font-size: 18px;
+    }
+    #bx{
+        width: 93%;
+        height: 65px;
+    }
 }
